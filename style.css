@@ -82,6 +82,21 @@ body {
     gap: 2rem;
 }
 
+/* Aktif link için stil */
+.nav-links li a.active {
+    color: #3498db; /* Mavi renk */
+}
+.nav-links li a.active:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #3498db;
+    transform: translateX(-50%);
+}
+
 .nav-links li a {
     color: #333;
     text-decoration: none;
@@ -106,6 +121,7 @@ body {
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
+
 
 .nav-links li a:hover:after {
     width: 100%;

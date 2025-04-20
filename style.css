@@ -567,7 +567,6 @@ body {
 .footer-logo {
     height: 50px;
     margin-bottom: 1.5rem;
-    filter: brightness(0) invert(1);
 }
 
 .footer-info p {
@@ -591,12 +590,18 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .social-link:hover {
     background-color: var(--secondary-color);
     transform: translateY(-3px);
 }
+
+.social-links .social-link:after {
+    display: none;
+}
+
 
 .footer h4 {
     color: #fff;
@@ -724,4 +729,91 @@ body {
     .footer-info {
         max-width: 100%;
     }
+}
+
+
+/* Yeni eklenen */
+
+:root {
+    --primary-color: #19212A;
+    --secondary-color: #E7E9EB;
+    --text-color: #19212A;
+    --light-gray: #f4f4f4;
+    --white: #ffffff;
+    --gradient-primary: linear-gradient(135deg, #19212A 0%, #2c3e50 100%);
+}
+
+/* Navbar güncellemeleri */
+.navbar {
+    background-color: #19212A;
+}
+
+.nav-links li a {
+    color: #E7E9EB;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #ffffff;
+}
+
+.nav-links li a:after,
+.nav-links li a.active:after {
+    background-color: #E7E9EB;
+}
+
+/* CTA Button güncelleme */
+.cta-button {
+    background: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Servis kartları güncelleme */
+.service-card {
+    border: 1px solid var(--primary-color);
+    background: var(--white);
+}
+
+.service-card:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Stats bölümü güncelleme */
+.stat-item {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.stat-item h3 {
+    color: #E7E9EB;
+}
+
+/* Section başlıkları güncelleme */
+.section-title,
+section h2 {
+    color: var(--primary-color);
+}
+
+/* Form elementleri güncelleme */
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid var(--primary-color);
+}
+
+.contact-form button {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.contact-form button:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
 }

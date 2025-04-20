@@ -850,7 +850,7 @@ section h2 {
     top: 100%;
     right: 0;
     background-color: var(--primary-color);
-    min-width: 280px;
+    min-width: 300px;
     box-shadow: 0 4px 12px rgba(44, 62, 80, 0.25);
     border-radius: 8px;
     opacity: 0;
@@ -942,4 +942,57 @@ section h2 {
 .service-card:hover h3, .service-card:hover a, .service-card:hover p{
     color: #ffffff; /* Beyaz renk */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Okunabilirliği artırmak için hafif gölge */
+}
+
+
+.dropdown-menu {
+    width: 100%; /* Dropdown menünün genişliğini ayarlar */
+    min-width: 200px; /* Minimum bir genişlik belirler */
+}
+
+.dropdown-menu li {
+    width: 100%; /* Liste öğelerinin tam genişliği kaplamasını sağlar */
+}
+
+.dropdown-menu li a {
+    display: block; /* Link'i blok element yapar */
+    width: 100%; /* Link'in tam genişliği kaplamasını sağlar */
+    padding: 10px 15px; /* İçeriğe biraz boşluk ekler */
+    text-decoration: none;
+    white-space: nowrap; /* Uzun metinlerin alt satıra geçmemesini sağlar */
+}
+
+/* Hover efekti için (opsiyonel) */
+.dropdown-menu li a:hover {
+    background-color: rgba(245, 245, 245, 0.1); /* Hover durumunda arka plan rengi */
+}
+
+.dropdown-menu {
+    min-width: max-content; /* İçeriğe göre minimum genişlik */
+    white-space: nowrap; /* Metinlerin alt satıra geçmemesini sağlar */
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    text-overflow: ellipsis; /* Taşan metni ... ile göster */
+    overflow: hidden; /* Taşan içeriği gizle */
+    white-space: nowrap; /* Metin alt satıra geçmesin */
+}
+
+/* Dropdown container'ı için (eğer yoksa) */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown menünün konumlandırması için */
+.dropdown .dropdown-menu {
+    position: absolute;
+    right: 0; /* Sağa yasla */
+    left: auto; /* Sol taraftan otomatik */
 }

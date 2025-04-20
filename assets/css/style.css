@@ -817,3 +817,129 @@ section h2 {
     background: var(--secondary-color);
     color: var(--primary-color);
 }
+/* Dropdown menü stilleri */
+.dropdown {
+    position: relative;
+    margin-left: auto;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.dropdown-toggle i {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+    color: var(--secondary-color);
+}
+
+.dropdown:hover .dropdown-toggle {
+    color: var(--secondary-color);
+}
+
+.dropdown:hover .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--primary-color);
+    min-width: 280px;
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.25);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 8px 0;
+    margin-top: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    display: block;
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 14px 24px;
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* var(--secondary-color) with opacity */
+    color: var(--secondary-color);
+    border-left: 3px solid var(--secondary-color);
+}
+
+/* Dropdown menü ok işareti */
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-color);
+    transform: rotate(45deg);
+}
+
+/* Nav-links için düzenleme */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Dropdown menü stilleri */
+.dropdown {
+    position: relative;
+    margin-left: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+    font-weight: 500;
+    height: 100%;
+    padding: 0; /* Eğer varsa padding'i kaldırıyoruz */
+}
+.service-card:hover h3, .service-card:hover a, .service-card:hover p{
+    color: #ffffff; /* Beyaz renk */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Okunabilirliği artırmak için hafif gölge */
+}

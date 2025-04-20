@@ -18,229 +18,243 @@
     <!-- Web Manifest -->
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="assets/images/logo.png" alt="Erginsoy İnşaat Logo" class="logo-image">
-                <span class="logo-text">Erginsoy İnşaat</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#anasayfa">Ana Sayfa</a></li>
-                <li><a href="#hakkimizda">Hakkımızda</a></li>
-                <li><a href="#hizmetler">Hizmetler</a></li>
-                <li><a href="#projeler">Projeler</a></li>
-                <li><a href="#iletisim">İletişim</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="assets/images/logo.png" alt="Erginsoy İnşaat Logo" class="logo-image">
+            <span class="logo-text">Erginsoy İnşaat</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#anasayfa">Ana Sayfa</a></li>
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#projeler">Projeler</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Diğer Sektörler <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/degerleme">Gayrimenkul Değerleme</a></li>
+                    <li><a href="#">Sektör 2</a></li>
+                    <li><a href="#">Sektör 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-    <section id="anasayfa" class="hero">
-        <div class="video-background">
-            <video autoplay muted loop playsinline>
-                <source src="assets/videos/video.mp4" type="video/mp4">
-                Tarayıcınız video etiketini desteklemiyor.
-            </video>
-        </div>
-        <div class="hero-content">
-            <h1 class="animate__animated animate__fadeIn">Geleceğin Yapılarını İnşa Ediyoruz</h1>
-            <p class="animate__animated animate__fadeIn animate__delay-1s">40 yıllık tecrübemizle hayallerinizdeki projeleri gerçeğe dönüştürüyoruz</p>
-            <a href="#iletisim" class="cta-button animate__animated animate__fadeIn animate__delay-2s">Bizimle İletişime Geçin</a>
-        </div>
-    </section>
 
-    <section id="hakkimizda" class="about">
-        <div class="container">
-            <h2>Hakkımızda</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>1980'den beri inşaat sektöründe kaliteli ve güvenilir hizmet sunuyoruz. Modern teknoloji ve uzman kadromuzla, müşterilerimizin hayallerini gerçeğe dönüştürüyoruz.</p>
+
+<section id="anasayfa" class="hero">
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="assets/videos/video.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+    <div class="hero-content">
+        <h1 class="animate__animated animate__fadeIn">Geleceğin Yapılarını İnşa Ediyoruz</h1>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">40 yıllık tecrübemizle hayallerinizdeki projeleri
+            gerçeğe dönüştürüyoruz</p>
+        <a href="#iletisim" class="cta-button animate__animated animate__fadeIn animate__delay-2s">Bizimle İletişime
+            Geçin</a>
+    </div>
+</section>
+
+<section id="hakkimizda" class="about">
+    <div class="container">
+        <h2>Hakkımızda</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>1980'den beri inşaat sektöründe kaliteli ve güvenilir hizmet sunuyoruz. Modern teknoloji ve uzman
+                    kadromuzla, müşterilerimizin hayallerini gerçeğe dönüştürüyoruz.</p>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Tamamlanan Proje</p>
                 </div>
-                <div class="stats">
-                    <div class="stat-item">
-                        <h3>500+</h3>
-                        <p>Tamamlanan Proje</p>
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>Mutlu Müşteri</p>
+                </div>
+                <div class="stat-item">
+                    <h3>40+</h3>
+                    <p>Yıllık Tecrübe</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="hizmetler" class="services">
+    <div class="container">
+        <h2 class="section-title">Hizmetlerimiz</h2>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <h3>Konut Projeleri</h3>
+                <p>Modern ve konforlu yaşam alanları inşa ediyoruz.</p>
+                <a href="#" class="service-link">Detaylı Bilgi</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Endüstriyel Yapılar</h3>
+                <p>Fabrika ve depo binaları için özel çözümler.</p>
+                <a href="#" class="service-link">Detaylı Bilgi</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Ticari Binalar</h3>
+                <p>İş merkezleri ve ofis binaları inşaatı.</p>
+                <a href="#" class="service-link">Detaylı Bilgi</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projeler" class="projects">
+    <div class="container">
+        <h2>Projelerimiz</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1597285112431-115a1f48bde2?w=800" alt="Proje 1">
+                <div class="project-info">
+                    <h3>Modern Rezidans</h3>
+                    <p>İstanbul, 2023</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800" alt="Proje 2">
+                <div class="project-info">
+                    <h3>İş Merkezi</h3>
+                    <p>Ankara, 2022</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1577493340887-b7bfff550145?w=800" alt="Proje 3">
+                <div class="project-info">
+                    <h3>Lüks Konut Projesi</h3>
+                    <p>İzmir, 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="iletisim" class="contact">
+    <div class="contact-container">
+        <div class="contact-left">
+            <h2>Fikirleriniz Bizim İçin Değerli</h2>
+            <p class="contact-description">Projelerinizi hayata geçirmek için bizimle iletişime geçin. Size en kısa
+                sürede dönüş yapacağız.</p>
+            <div class="contact-features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
                     </div>
-                    <div class="stat-item">
-                        <h3>1000+</h3>
-                        <p>Mutlu Müşteri</p>
+                    <div class="feature-text">
+                        <h3>Profesyonel Yaklaşım</h3>
+                        <p>Uzman ekibimizle projelerinize değer katıyoruz</p>
                     </div>
-                    <div class="stat-item">
-                        <h3>40+</h3>
-                        <p>Yıllık Tecrübe</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Hızlı Dönüş</h3>
+                        <p>24 saat içinde sizinle iletişime geçiyoruz</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="hizmetler" class="services">
-        <div class="container">
-            <h2 class="section-title">Hizmetlerimiz</h2>
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up">
-                    <h3>Konut Projeleri</h3>
-                    <p>Modern ve konforlu yaşam alanları inşa ediyoruz.</p>
-                    <a href="#" class="service-link">Detaylı Bilgi</a>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Endüstriyel Yapılar</h3>
-                    <p>Fabrika ve depo binaları için özel çözümler.</p>
-                    <a href="#" class="service-link">Detaylı Bilgi</a>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Ticari Binalar</h3>
-                    <p>İş merkezleri ve ofis binaları inşaatı.</p>
-                    <a href="#" class="service-link">Detaylı Bilgi</a>
-                </div>
+        <div class="contact-right">
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Adınız" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="E-posta Adresiniz" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Telefon Numaranız" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mesajınız" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Gönder</button>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="projeler" class="projects">
+<footer class="footer">
+    <div class="footer-top">
         <div class="container">
-            <h2>Projelerimiz</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1597285112431-115a1f48bde2?w=800" alt="Proje 1">
-                    <div class="project-info">
-                        <h3>Modern Rezidans</h3>
-                        <p>İstanbul, 2023</p>
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="./assets/images/logo.png" alt="Erginsoy İnşaat Logo" class="footer-logo">
+                    <p>40 yıllık tecrübemizle, kaliteli ve güvenilir yapılar inşa ediyoruz.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800" alt="Proje 2">
-                    <div class="project-info">
-                        <h3>İş Merkezi</h3>
-                        <p>Ankara, 2022</p>
-                    </div>
+                <div class="footer-links">
+                    <h4>Hızlı Erişim</h4>
+                    <ul>
+                        <li><a href="#anasayfa">Ana Sayfa</a></li>
+                        <li><a href="#hakkimizda">Hakkımızda</a></li>
+                        <li><a href="#hizmetler">Hizmetler</a></li>
+                        <li><a href="#projeler">Projeler</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                    </ul>
                 </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1577493340887-b7bfff550145?w=800" alt="Proje 3">
-                    <div class="project-info">
-                        <h3>Lüks Konut Projesi</h3>
-                        <p>İzmir, 2023</p>
-                    </div>
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Merkez Mah. İnşaat Cad. No:123<br>İstanbul, Türkiye</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+90 (212) 555 0123</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@erginsoyinsaat.com</span>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="iletisim" class="contact">
-        <div class="contact-container">
-            <div class="contact-left">
-                <h2>Fikirleriniz Bizim İçin Değerli</h2>
-                <p class="contact-description">Projelerinizi hayata geçirmek için bizimle iletişime geçin. Size en kısa sürede dönüş yapacağız.</p>
-                <div class="contact-features">
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h3>Profesyonel Yaklaşım</h3>
-                            <p>Uzman ekibimizle projelerinize değer katıyoruz</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h3>Hızlı Dönüş</h3>
-                            <p>24 saat içinde sizinle iletişime geçiyoruz</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-right">
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Adınız" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="E-posta Adresiniz" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Telefon Numaranız" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Mesajınız" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Gönder</button>
+                <div class="footer-newsletter">
+                    <h4>Bültenimize Katılın</h4>
+                    <p>Yeni projelerimizden ve gelişmelerden haberdar olun</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="E-posta adresiniz">
+                        <button type="submit">Gönder</button>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-info">
-                        <img src="./assets/images/logo.png" alt="Erginsoy İnşaat Logo" class="footer-logo">
-                        <p>40 yıllık tecrübemizle, kaliteli ve güvenilir yapılar inşa ediyoruz.</p>
-                        <div class="social-links">
-                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="footer-links">
-                        <h4>Hızlı Erişim</h4>
-                        <ul>
-                            <li><a href="#anasayfa">Ana Sayfa</a></li>
-                            <li><a href="#hakkimizda">Hakkımızda</a></li>
-                            <li><a href="#hizmetler">Hizmetler</a></li>
-                            <li><a href="#projeler">Projeler</a></li>
-                            <li><a href="#iletisim">İletişim</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-contact">
-                        <h4>İletişim</h4>
-                        <ul>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Merkez Mah. İnşaat Cad. No:123<br>İstanbul, Türkiye</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-phone"></i>
-                                <span>+90 (212) 555 0123</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <span>info@erginsoyinsaat.com</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-newsletter">
-                        <h4>Bültenimize Katılın</h4>
-                        <p>Yeni projelerimizden ve gelişmelerden haberdar olun</p>
-                        <form class="newsletter-form">
-                            <input type="email" placeholder="E-posta adresiniz">
-                            <button type="submit">Gönder</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2025 Erginsoy İnşaat. Tüm hakları saklıdır.</p>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2025 Erginsoy İnşaat. Tüm hakları saklıdır.</p>
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="script.js"></script>
 </body>
 </html>

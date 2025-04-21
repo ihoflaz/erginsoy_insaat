@@ -11,18 +11,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="../assets/favicon/site.webmanifest">
 
-
     <!-- Stiller -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/degerleme.css">
-
-    <!-- Font Awesome <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 </head>
 <body>
 <!-- Header -->
@@ -34,15 +27,14 @@
         </a>
         <ul class="nav-links">
             <li><a href="#anasayfa">Ana Sayfa</a></li>
-            <li><a href="#hakkimizda">Hakkımızda</a></li>
             <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#referanslar">Referanslar</a></li>
             <li><a href="#iletisim">İletişim</a></li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Diğer Sektörler <i class="fas fa-chevron-down"></i></a>
+                <a href="#" class="dropdown-toggle">Diğer Hizmetler <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="/">İnşaat</a></li>
-                    <li><a href="#">Sektör 2</a></li>
-                    <li><a href="#">Sektör 3</a></li>
+                    <li><a href="/degerleme">Gayrimenkul Değerleme (Ekspertiz)</a></li>
                 </ul>
             </li>
         </ul>
@@ -53,35 +45,42 @@
 <main>
     <!-- Ana Sayfa Section -->
     <section id="anasayfa" class="hero">
+        <div class="hero-background">
+            <!-- Buraya arka plan videosu veya görseli gelecek -->
+        </div>
         <div class="container">
-            <h1>Gayrimenkul Değerleme Hizmetleri</h1>
-            <p>Profesyonel ve güvenilir gayrimenkul değerleme çözümleri</p>
-            <a href="#iletisim" class="cta-button">Hemen Teklif Alın</a>
+            <h1>Profesyonel Gayrimenkul Değerleme Hizmetleri</h1>
+            <p>SPK Lisanslı Uzman Kadromuzla Güvenilir ve Tarafsız Değerleme Raporları</p>
+            <div class="hero-buttons">
+                <a href="#iletisim" class="cta-button">Hemen Teklif Alın</a>
+                <a href="#hizmetler" class="secondary-button">Hizmetlerimizi İnceleyin</a>
+            </div>
         </div>
     </section>
 
-    <!-- Hakkımızda Section -->
-    <section id="hakkimizda" class="about">
+    <!-- Neden Biz Section -->
+    <section id="neden-biz" class="features">
         <div class="container">
-            <h2>Hakkımızda</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Erginsoy Değerleme, SPK lisanslı uzman kadrosuyla 20 yılı aşkın süredir gayrimenkul değerleme sektöründe hizmet vermektedir.</p>
-                    <p>Misyonumuz, müşterilerimize en doğru ve güvenilir değerleme hizmetini sunmaktır.</p>
+            <div class="features-grid">
+                <div class="feature-item" data-aos="fade-up">
+                    <i class="fas fa-certificate"></i>
+                    <h3>SPK Lisanslı</h3>
+                    <p>Sermaye Piyasası Kurulu tarafından yetkilendirilmiş uzman kadro</p>
                 </div>
-                <div class="stats">
-                    <div class="stat-item">
-                        <h3>1000</h3>
-                        <p>Tamamlanan Proje</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>500</h3>
-                        <p>Mutlu Müşteri</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>20</h3>
-                        <p>Yıllık Deneyim</p>
-                    </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-clock"></i>
+                    <h3>Hızlı Hizmet</h3>
+                    <p>48 saat içinde değerleme raporu teslimi</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Güncel Değerler</h3>
+                    <p>Piyasa koşullarına uygun gerçekçi değerleme</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Güvenilir</h3>
+                    <p>20 yıllık sektör deneyimi</p>
                 </div>
             </div>
         </div>
@@ -93,34 +92,102 @@
             <h2 class="section-title">Değerleme Hizmetlerimiz</h2>
             <div class="services-grid">
                 <div class="service-card" data-aos="fade-up">
-                    <i class="fas fa-building"></i>
-                    <h3>SPK Lisanslı Değerleme</h3>
-                    <p>Sermaye Piyasası Kurulu standartlarına uygun değerleme raporları hazırlıyoruz.</p>
+                    <i class="fas fa-home"></i>
+                    <h3>Konut Değerleme</h3>
+                    <p>Daire, villa ve müstakil ev değerlemesi</p>
                     <ul>
-                        <li>Gayrimenkul Değerleme</li>
-                        <li>Makine ve Ekipman Değerleme</li>
-                        <li>Proje Değerleme</li>
+                        <li>Krediye Esas Değerleme</li>
+                        <li>Alım-Satım Değerlemesi</li>
+                        <li>Miras ve Veraset Değerlemesi</li>
+                        <li>Kentsel Dönüşüm Değerlemesi</li>
                     </ul>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fas fa-file-contract"></i>
-                    <h3>Ekspertiz Raporları</h3>
-                    <p>Bankalar ve özel kurumlar için detaylı ekspertiz hizmetleri sunuyoruz.</p>
+                    <i class="fas fa-building"></i>
+                    <h3>Ticari Gayrimenkul</h3>
+                    <p>İşyeri ve ticari bina değerlemesi</p>
                     <ul>
-                        <li>Konut Ekspertizi</li>
-                        <li>Ticari Gayrimenkul Ekspertizi</li>
-                        <li>Arsa ve Arazi Ekspertizi</li>
+                        <li>AVM Değerlemesi</li>
+                        <li>Otel ve Turizm Tesisi Değerlemesi</li>
+                        <li>Ofis ve Plaza Değerlemesi</li>
+                        <li>Fabrika ve Depo Değerlemesi</li>
                     </ul>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Fizibilite Analizi</h3>
-                    <p>Kapsamlı fizibilite ve değer analizi raporları hazırlıyoruz.</p>
+                    <i class="fas fa-industry"></i>
+                    <h3>Özel Değerleme</h3>
+                    <p>Özel amaçlı gayrimenkul değerlemesi</p>
                     <ul>
-                        <li>Pazar Analizi</li>
-                        <li>Yatırım Analizi</li>
-                        <li>Maliyet Analizi</li>
+                        <li>Proje Değerlemesi</li>
+                        <li>Fizibilite Raporları</li>
+                        <li>En Etkin Kullanım Analizi</li>
+                        <li>Pazar Araştırma Raporları</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Süreç Section -->
+    <section id="surec" class="process">
+        <div class="container">
+            <h2 class="section-title">Değerleme Süreci</h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-content">
+                        <h3>Başvuru</h3>
+                        <p>Online veya telefon ile değerleme talebinizi iletin</p>
+                    </div>
+                    <div class="step-number">1</div>
+                    <div></div>
+                </div>
+                <div class="process-step">
+                    <div></div>
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Ekspertiz</h3>
+                        <p>Uzman ekibimiz gayrimenkulü yerinde inceler</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-content">
+                        <h3>Analiz</h3>
+                        <p>Detaylı piyasa araştırması ve değer analizi yapılır</p>
+                    </div>
+                    <div class="step-number">3</div>
+                    <div></div>
+                </div>
+                <div class="process-step">
+                    <div></div>
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Raporlama</h3>
+                        <p>Profesyonel değerleme raporu hazırlanır</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Referanslar Section -->
+    <section id="referanslar" class="references">
+        <div class="container">
+            <h2 class="section-title">Referanslarımız</h2>
+            <div class="references-grid">
+                <!-- Referans logoları buraya gelecek -->
+            </div>
+            <div class="reference-stats">
+                <div class="stat-item" data-aos="fade-up">
+                    <h3>10.000+</h3>
+                    <p>Tamamlanan Değerleme</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3>50+</h3>
+                    <p>Kurumsal Müşteri</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3>20+</h3>
+                    <p>Yıllık Deneyim</p>
                 </div>
             </div>
         </div>
@@ -130,26 +197,25 @@
     <section id="iletisim" class="contact">
         <div class="contact-container">
             <div class="contact-left">
-                <h2>Fikirleriniz Bizim İçin Değerli</h2>
-                <p class="contact-description">Projelerinizi hayata geçirmek için bizimle iletişime geçin. Size en kısa
-                    sürede dönüş yapacağız.</p>
+                <h2>Değerleme Talebi Oluşturun</h2>
+                <p class="contact-description">Size en uygun değerleme hizmeti için ekibimiz 24 saat içinde dönüş yapacaktır.</p>
                 <div class="contact-features">
                     <div class="feature">
                         <div class="feature-icon">
-                            <i class="fas fa-handshake"></i>
+                            <i class="fas fa-phone-alt"></i>
                         </div>
                         <div class="feature-text">
-                            <h3>Profesyonel Yaklaşım</h3>
-                            <p>Uzman ekibimizle projelerinize değer katıyoruz</p>
+                            <h3>7/24 Destek</h3>
+                            <p>Sorularınız için bize her zaman ulaşabilirsiniz</p>
                         </div>
                     </div>
                     <div class="feature">
                         <div class="feature-icon">
-                            <i class="fas fa-clock"></i>
+                            <i class="fas fa-file-alt"></i>
                         </div>
                         <div class="feature-text">
-                            <h3>Hızlı Dönüş</h3>
-                            <p>24 saat içinde sizinle iletişime geçiyoruz</p>
+                            <h3>Ücretsiz Ön Değerlendirme</h3>
+                            <p>İlk görüşmede ücretsiz ön değerlendirme raporu</p>
                         </div>
                     </div>
                 </div>
@@ -158,7 +224,7 @@
                 <div class="contact-form-container">
                     <form class="contact-form">
                         <div class="form-group">
-                            <input type="text" placeholder="Adınız" required>
+                            <input type="text" placeholder="Adınız Soyadınız" required>
                         </div>
                         <div class="form-group">
                             <input type="email" placeholder="E-posta Adresiniz" required>
@@ -167,9 +233,18 @@
                             <input type="tel" placeholder="Telefon Numaranız" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Mesajınız" required></textarea>
+                            <select required>
+                                <option value="">Değerleme Türü Seçin</option>
+                                <option value="konut">Konut Değerleme</option>
+                                <option value="ticari">Ticari Gayrimenkul</option>
+                                <option value="arsa">Arsa Değerleme</option>
+                                <option value="proje">Proje Değerleme</option>
+                            </select>
                         </div>
-                        <button type="submit" class="submit-btn">Gönder</button>
+                        <div class="form-group">
+                            <textarea placeholder="Gayrimenkul bilgilerini ve talebinizi kısaca belirtiniz" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Teklif Al</button>
                     </form>
                 </div>
             </div>
@@ -183,8 +258,8 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <img src="../assets/images/logo.png" alt="Erginsoy İnşaat Logo" class="footer-logo">
-                    <p>40 yıllık tecrübemizle, kaliteli ve güvenilir yapılar inşa ediyoruz.</p>
+                    <img src="../assets/images/logo.png" alt="Erginsoy Değerleme Logo" class="footer-logo">
+                    <p>20 yıllık tecrübemizle, SPK lisanslı uzman kadromuzla güvenilir ve tarafsız değerleme hizmetleri sunuyoruz.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
@@ -196,8 +271,9 @@
                     <h4>Hızlı Erişim</h4>
                     <ul>
                         <li><a href="#anasayfa">Ana Sayfa</a></li>
-                        <li><a href="#hakkimizda">Hakkımızda</a></li>
-                        <li><a href="#hizmetler">Hizmetler</a></li>
+                        <li><a href="#hizmetler">Hizmetlerimiz</a></li>
+                        <li><a href="#surec">Değerleme Süreci</a></li>
+                        <li><a href="#referanslar">Referanslarımız</a></li>
                         <li><a href="#iletisim">İletişim</a></li>
                     </ul>
                 </div>
@@ -206,7 +282,7 @@
                     <ul>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Merkez Mah. İnşaat Cad. No:123<br>İstanbul, Türkiye</span>
+                            <span>Merkez Mah. Değerleme Cad. No:123<br>İstanbul, Türkiye</span>
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
@@ -214,31 +290,30 @@
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <span>info@erginsoyinsaat.com</span>
+                            <span>degerleme@erginsoy.com</span>
                         </li>
                     </ul>
                 </div>
-                <div class="footer-newsletter">
-                    <h4>Bültenimize Katılın</h4>
-                    <p>Yeni projelerimizden ve gelişmelerden haberdar olun</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="E-posta adresiniz">
-                        <button type="submit">Gönder</button>
-                    </form>
+                <div class="footer-certificates">
+                    <h4>Lisans ve Yetkiler</h4>
+                    <div class="certificate-images">
+                        <!-- SPK ve TDUB logoları buraya gelecek -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
         <div class="container">
-            <p>&copy; 2025 Erginsoy İnşaat. Tüm hakları saklıdır.</p>
+            <p>&copy; 2024 Erginsoy Değerleme. Tüm hakları saklıdır.</p>
         </div>
     </div>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
-<!-- Scripts -->
 <script src="../script.js"></script>
 </body>
 </html>

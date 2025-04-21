@@ -172,6 +172,38 @@
     margin: 0;
 }
 
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+    .process-timeline {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .process-timeline::before {
+        left: 30px;
+    }
+
+    .process-step {
+        grid-template-columns: 60px 1fr;
+        gap: 15px;
+    }
+
+    .step-number {
+        grid-column: 1;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .process-step:nth-child(odd) .step-content,
+    .process-step:nth-child(even) .step-content {
+        grid-column: 2;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 0;
+    }
+}
+
 /* References Section */
 .references {
     padding: 5rem 0;
@@ -260,33 +292,19 @@
         gap: 1rem;
     }
 
-    .process-timeline {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-
     .process-timeline::before {
-        left: 30px;
+        left: 20px;
     }
 
     .process-step {
-        grid-template-columns: 60px 1fr;
-        gap: 15px;
+        flex-direction: row !important;
+        justify-content: flex-start;
+        padding-left: 50px;
     }
 
     .step-number {
-        grid-column: 1;
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
-    }
-
-    .process-step:nth-child(odd) .step-content,
-    .process-step:nth-child(even) .step-content {
-        grid-column: 2;
-        text-align: left;
-        padding-left: 15px;
-        padding-right: 0;
+        left: 20px;
+        transform: none;
     }
 }
 

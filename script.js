@@ -115,12 +115,33 @@ document.addEventListener('DOMContentLoaded', initVideoSlider);
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navLinks = document.querySelector('.nav-links');
 const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+const navOverlay = document.querySelector('.nav-overlay');
 
 // Hamburger menü tıklama olayı
-hamburgerMenu.addEventListener('click', () => {
-    hamburgerMenu.classList.toggle('active');
-    navLinks.classList.toggle('active');
-});
+if (hamburgerMenu) {
+    hamburgerMenu.addEventListener('click', () => {
+        toggleMenu();
+    });
+}
+
+// Overlay tıklama olayı
+if (navOverlay) {
+    navOverlay.addEventListener('click', () => {
+        toggleMenu(false);
+    });
+}
+
+// Menüyü aç/kapat
+function toggleMenu(show = null) {
+    const isActive = show !== null ? show : !hamburgerMenu.classList.contains('active');
+    
+    hamburgerMenu.classList.toggle('active', isActive);
+    navLinks.classList.toggle('active', isActive);
+    navOverlay.classList.toggle('active', isActive);
+    
+    // Body scroll lock
+    document.body.style.overflow = isActive ? 'hidden' : '';
+}
 
 // Mobil menüde dropdown menüleri için
 dropdownToggles.forEach(toggle => {
@@ -134,12 +155,13 @@ dropdownToggles.forEach(toggle => {
 });
 
 // Mobil menüde link tıklamalarını yönet
-navLinks.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A' && !e.target.classList.contains('dropdown-toggle')) {
-        hamburgerMenu.classList.remove('active');
-        navLinks.classList.remove('active');
-    }
-});
+if (navLinks) {
+    navLinks.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A' && !e.target.classList.contains('dropdown-toggle')) {
+            toggleMenu(false);
+        }
+    });
+}
 
 // Sayfa yüklendiğinde ve yeniden boyutlandırıldığında dropdown menüleri sıfırla
 window.addEventListener('resize', () => {
@@ -147,8 +169,7 @@ window.addEventListener('resize', () => {
         document.querySelectorAll('.dropdown-menu').forEach(menu => {
             menu.classList.remove('show');
         });
-        hamburgerMenu.classList.remove('active');
-        navLinks.classList.remove('active');
+        toggleMenu(false);
     }
 });
 

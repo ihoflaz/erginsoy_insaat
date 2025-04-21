@@ -111,4 +111,45 @@ function initVideoSlider() {
 // Initialize video slider when page loads
 document.addEventListener('DOMContentLoaded', initVideoSlider);
 
+// Mobil menü için gerekli değişkenler
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+// Hamburger menü tıklama olayı
+hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+
+// Mobil menüde dropdown menüleri için
+dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdownMenu = toggle.nextElementSibling;
+            dropdownMenu.classList.toggle('show');
+        }
+    });
+});
+
+// Mobil menüde link tıklamalarını yönet
+navLinks.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A' && !e.target.classList.contains('dropdown-toggle')) {
+        hamburgerMenu.classList.remove('active');
+        navLinks.classList.remove('active');
+    }
+});
+
+// Sayfa yüklendiğinde ve yeniden boyutlandırıldığında dropdown menüleri sıfırla
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        document.querySelectorAll('.dropdown-menu').forEach(menu => {
+            menu.classList.remove('show');
+        });
+        hamburgerMenu.classList.remove('active');
+        navLinks.classList.remove('active');
+    }
+});
+
 console.log("Web sitesi hazır!");

@@ -38,7 +38,14 @@
             <li><a href="#anasayfa">Ana Sayfa</a></li>
             <li><a href="#hakkimizda">Hakkımızda</a></li>
             <li><a href="#hizmetler">Hizmetler</a></li>
-            <li><a href="#projeler">Projeler</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Projeler <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#projeler">Projelerimiz</a></li>
+                    <li><a href="#galeri">Fotoğraf Galerisi</a></li>
+                    <li><a href="#video-showcase">Video Galeri</a></li>
+                </ul>
+            </li>
             <li><a href="#iletisim">İletişim</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle">Diğer Hizmetler <i class="fas fa-chevron-down"></i></a>
@@ -56,6 +63,7 @@
 <section id="anasayfa" class="hero">
     <div class="video-background">
         <video autoplay muted loop playsinline>
+            <source src="assets/videos/video.mp4" type="video/mp4">
             <source src="assets/videos/video.mp4" type="video/mp4">
             Tarayıcınız video etiketini desteklemiyor.
         </video>
@@ -76,6 +84,9 @@
             <div class="about-text">
                 <p>1980'den beri inşaat sektöründe kaliteli ve güvenilir hizmet sunuyoruz. Modern teknoloji ve uzman
                     kadromuzla, müşterilerimizin hayallerini gerçeğe dönüştürüyoruz.</p>
+                <div class="about-image-container">
+                    <img src="assets/images/about-team.jpg" alt="Erginsoy İnşaat Ekibi" class="about-team-image">
+                </div>
             </div>
             <div class="stats">
                 <div class="stat-item">
@@ -123,24 +134,129 @@
         <h2>Projelerimiz</h2>
         <div class="project-grid">
             <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1597285112431-115a1f48bde2?w=800" alt="Proje 1">
+                <img src="assets/images/project-hero-1.jpg" alt="Modern Rezidans Projesi">
                 <div class="project-info">
                     <h3>Modern Rezidans</h3>
                     <p>İstanbul, 2023</p>
                 </div>
             </div>
             <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800" alt="Proje 2">
+                <img src="assets/images/project-hero-2.jpg" alt="İş Merkezi Projesi">
                 <div class="project-info">
                     <h3>İş Merkezi</h3>
                     <p>Ankara, 2022</p>
                 </div>
             </div>
             <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1577493340887-b7bfff550145?w=800" alt="Proje 3">
+                <img src="assets/images/project-hero-3.jpg" alt="Lüks Konut Projesi">
                 <div class="project-info">
                     <h3>Lüks Konut Projesi</h3>
                     <p>İzmir, 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="galeri" class="gallery">
+    <div class="container">
+        <h2 class="section-title">Fotoğraf Galerisi</h2>
+        <p class="gallery-subtitle">Gerçekleştirdiğimiz projelerin en güzel anlarını sizlerle paylaşıyoruz</p>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-aos="fade-up">
+                <img src="assets/images/gallery-new-1.jpg" alt="İnşaat Fotoğrafı 1">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/images/gallery-new-2.jpg" alt="İnşaat Fotoğrafı 2">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/images/gallery-new-3.jpg" alt="İnşaat Fotoğrafı 3">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item large" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/images/project-hero-1.jpg" alt="Büyük Proje Fotoğrafı">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/images/gallery-new-4.jpg" alt="İnşaat Fotoğrafı 4">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+                <img src="assets/images/gallery-new-5.jpg" alt="İnşaat Fotoğrafı 5">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
+                <img src="assets/images/gallery-new-6.jpg" alt="İnşaat Fotoğrafı 6">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="700">
+                <img src="assets/images/gallery-new-7.jpg" alt="İnşaat Fotoğrafı 7">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="assets/images/gallery-new-8.jpg" alt="İnşaat Fotoğrafı 8">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox for Gallery Images -->
+<div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-nav lightbox-prev">&#8249;</span>
+        <span class="lightbox-nav lightbox-next">&#8250;</span>
+        <img id="lightbox-img" src="" alt="">
+        <div class="lightbox-counter">
+            <span id="lightbox-current">1</span> / <span id="lightbox-total">9</span>
+        </div>
+    </div>
+</div>
+
+<section id="video-showcase" class="video-showcase">
+    <div class="container">
+        <h2 class="section-title">Video Galeri</h2>
+        <p class="gallery-subtitle">Projelerimizin gelişim sürecini video ile takip edin</p>
+        <div class="video-grid">
+            <div class="video-item" data-aos="fade-up">
+                <video autoplay muted loop playsinline poster="assets/images/project-hero-1.jpg">
+                    <source src="assets/videos/project-showcase.mp4" type="video/mp4">
+                    Tarayıcınız video etiketini desteklemiyor.
+                </video>
+                <div class="video-info">
+                    <h3>Proje Gelişimi</h3>
+                    <p>İnşaat sürecinin detaylı görüntüleri</p>
+                </div>
+            </div>
+            <div class="video-item" data-aos="fade-up" data-aos-delay="200">
+                <video autoplay muted loop playsinline poster="assets/images/project-hero-2.jpg">
+                    <source src="assets/videos/construction-hero.mp4" type="video/mp4">
+                    Tarayıcınız video etiketini desteklemiyor.
+                </video>
+                <div class="video-info">
+                    <h3>Yapım Aşamaları</h3>
+                    <p>Temelden çatıya kadar tüm süreç</p>
                 </div>
             </div>
         </div>
@@ -217,6 +333,8 @@
                         <li><a href="#hakkimizda">Hakkımızda</a></li>
                         <li><a href="#hizmetler">Hizmetler</a></li>
                         <li><a href="#projeler">Projeler</a></li>
+                        <li><a href="#galeri">Galeri</a></li>
+                        <li><a href="#video-showcase">Video</a></li>
                         <li><a href="#iletisim">İletişim</a></li>
                     </ul>
                 </div>

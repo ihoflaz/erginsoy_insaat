@@ -1,0 +1,226 @@
+# ===========================================
+# Erginsoy İnşaat Web Project .gitignore
+# ===========================================
+
+# ===== OPERATING SYSTEM FILES =====
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===== DEVELOPMENT TOOLS =====
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.metadata
+.buildpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+.vimrc.local
+
+# JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ===== LOGS AND CACHE =====
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Cache directories
+.cache/
+.parcel-cache/
+.npm/
+.eslintcache
+.stylelintcache
+
+# ===== NODE.JS (if using build tools) =====
+# Dependencies
+node_modules/
+jspm_packages/
+
+# npm/yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===== BUILD AND DIST =====
+# Build outputs
+dist/
+build/
+out/
+.output/
+.nuxt/
+.next/
+.svelte-kit/
+
+# Compiled CSS from preprocessors
+*.css.map
+*.sass.map
+*.scss.map
+*.less.map
+*.styl.map
+
+# ===== TEMPORARY AND BACKUP FILES =====
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*_backup
+*_bak
+.tmp/
+temp/
+
+# ===== PROJECT SPECIFIC =====
+# Original image assets (keeping processed ones)
+# Uncomment if you want to exclude the original high-res images
+# "Web site assests/"
+
+# Test files
+test/
+tests/
+*.test.js
+*.test.html
+*.spec.js
+
+# Documentation drafts
+*.draft.*
+NOTES.md
+TODO.md
+
+# ===== SECURITY =====
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# API keys and secrets
+config/secrets.json
+*.key
+*.pem
+*.cert
+*.crt
+
+# ===== MISC =====
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Database files
+*.sqlite
+*.db
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# ESLint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.test
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# FTP deployment files
+.ftpconfig
+.ftppass
+
+# ===== EXCEPTIONS (Force Include) =====
+# Force include certain files that might be ignored
+!.gitkeep
+!assets/**/*.css
+!assets/**/*.js
+!assets/**/*.jpg
+!assets/**/*.png
+!assets/**/*.svg
+!assets/**/*.ico
+!assets/**/*.mp4
+
+# Force include important config files
+!package.json
+!*.config.js
+!*.config.json
+Web site assests/
+*.txt
